@@ -38,7 +38,7 @@
                 <a class="nav-link" aria-current="page" href="employees.html">Employees</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="jobs-list.html">Jobs</a>
+                <a class="nav-link" href="job-list.html">Jobs</a>
               </li>
             </ul>
             <form class="d-flex">
@@ -57,57 +57,198 @@
 
     <!-- dashboard contents -->
     <div class="container-fluid">
-        <div class="row mt-3">
-            <div class="col-lg-3 col-md-3">
-                <div class="list-group small">
-                    <div class="list-group-item active">Employee Data</div>
-                    <a href="#" class="list-group-item" data-toggle="modal" data-target="#add_employee">Add Employee</a>
-                    <a href="employees.html" class="list-group-item">View all Employees</a>
+        <div class="row justify-content-center">
+            <div class=" col-md-2">
+                <div class="list-group  shadow-sm small mb-3">
+                    <div class="list-group-item active">Job Data</div>
+                    <a href="#" 
+                    class="list-group-item list-group-item-active" 
+                    data-toggle="modal" 
+                    data-target="#add_employee">
+                    Add Employee
+                </a>
+                    <a href="employees.html" class="list-group-item list-group-item-active">View Employees</a>
+                </div>
+                <div class="list-group-shadow-sm small mb-3">
+                 <div 
+                 class="list-group-item active ">
+                 Related Links
+                </div>
+                 <a 
+                 href=" #" 
+                 class="list-group-item list-group-item-active">
+                  Employees List
+                </a>
                 </div>
             </div>
-            <div class="col-lg-9 col-md-9">
-                <table class="table table-striped table-hover bg-light small">
-                    <tr class="table-dark">
-                        <th>ID</th>
-                        <th>Name</th>
-                        <th>Email ID</th>
-                        <th>Details</th>
-                        <th>Edit</th>
-                        <th>Delete</th>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>John Doe</td>
-                        <td>johndoe@gmail.com</td>
-                        <td><a href="#" data-toggle="modal" data-target="#employee_details1" class="btn btn-sm btn-block btn-info">Details</a></td>
-                        <td><a href="#" data-toggle="modal" data-target="#employee_edit_details1" class="btn btn-sm btn-block btn-warning">Edit</a></td>
-                        <td><a href="#" class="btn btn-sm btn-block btn-danger" data-toggle="modal" data-target="#employee_delete">Delete</a></td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>John Doe</td>
-                        <td>johndoe@gmail.com</td>
-                        <td><a href="#" data-toggle="modal" data-target="#add_employee" class="btn btn-sm btn-block btn-info">Details</a></td>
-                        <td><a href="#" class="btn btn-sm btn-block btn-warning" data-toggle="modal" data-target="#employee_edit_details1">Edit</a></td>
-                        <td><a href="#" class="btn btn-sm btn-block btn-danger" data-toggle="modal" data-target="#employee_delete">Delete</a></td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>John Doe</td>
-                        <td>johndoe@gmail.com</td>
-                        <td><a href="#" data-toggle="modal" data-target="#add_employee" class="btn btn-sm btn-block btn-info">Details</a></td>
-                        <td><a href="#" class="btn btn-sm btn-block btn-warning" data-toggle="modal" data-target="#employee_edit_details1">Edit</a></td>
-                        <td><a href="#" class="btn btn-sm btn-block btn-danger" data-toggle="modal" data-target="#employee_delete">Delete</a></td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>John Doe</td>
-                        <td>johndoe@gmail.com</td>
-                        <td><a href="#" data-toggle="modal" data-target="#add_employee" class="btn btn-sm btn-block btn-info">Details</a></td>
-                        <td><a href="#" class="btn btn-sm btn-block btn-warning" data-toggle="modal" data-target="#employee_edit_details1">Edit</a></td>
-                        <td><a href="#" class="btn btn-sm btn-block btn-danger" data-toggle="modal" data-target="#employee_delete">Delete</a></td>
-                    </tr>
-                </table>
+            <div class="col-md-10">
+                <div class="card shadow-sm border-0 mb-3">
+                    <div class="card-header text-bg-dark text-center">Job List</div>
+
+                    <table class="table table-striped table-hover bg-light small">
+                        <tr class="table-secondary">
+                            <th>ID</th>
+                            <th>Job Name</th>
+                            <th> Email</th>
+                            <th>Details</th>
+                            <th>Edit</th>
+                            <th>Delete</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>John Doe</td>
+                            <td>johndoe@gmail.com</td>
+                            <td>
+                               <div class="d-grid">
+                                <a 
+                                href="#" 
+                                data-toggle="modal"
+                                 data-target="#employee_details1"
+                                  class="btn btn-sm btn-block btn-info">
+                                  Details
+                                </a>
+                               </div>
+                            </td>
+                            <td>
+                               <div class="d-grid">
+                                <a
+                                href="#" 
+                                data-toggle="modal" 
+                                data-target="#employee_edit_details1"
+                                 class="btn btn-sm btn-block btn-warning">
+                                 Edit
+                               </a>
+                               </div>
+                            </td>
+                            <td>
+                               <div class="d-grid">
+                                <a 
+                                href="#" 
+                                class="btn btn-sm btn-block btn-danger"
+                                 data-toggle="modal"
+                                  data-target="#employee_delete">
+                                  Delete
+                                </a>
+                               </div>
+                            </td>
+                        </tr>
+                       
+                        <tr>
+                            <td>2</td>
+                            <td>John Doe</td>
+                            <td>johndoe@gmail.com</td>
+                            <td>
+                               <div class="d-grid">
+                                <a 
+                                href="#" 
+                                data-toggle="modal"
+                                 data-target="#employee_details1"
+                                  class="btn btn-sm btn-block btn-info">
+                                  Details
+                                </a>
+                               </div>
+                            </td>
+                            <td>
+                               <div class="d-grid">
+                                <a
+                                href="#" 
+                                data-toggle="modal" 
+                                data-target="#employee_edit_details1"
+                                 class="btn btn-sm btn-block btn-warning">
+                                 Edit
+                               </a>
+                               </div>
+                            </td>
+                            <td>
+                               <div class="d-grid">
+                                <a 
+                                href="#" 
+                                class="btn btn-sm btn-block btn-danger"
+                                 data-toggle="modal"
+                                  data-target="#employee_delete">
+                                  Delete
+                                </a>
+                               </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>John Doe</td>
+                            <td>johndoe@gmail.com</td>
+                            <td>
+                               <div class="d-grid">
+                                <a 
+                                href="#" 
+                                data-toggle="modal"
+                                 data-target="#employee_details1"
+                                  class="btn btn-sm btn-block btn-info">
+                                  Details
+                                </a>
+                               </div>
+                            </td>
+                            <td>
+                               <div class="d-grid">
+                                <a
+                                href="#" 
+                                data-toggle="modal" 
+                                data-target="#employee_edit_details1"
+                                 class="btn btn-sm btn-block btn-warning">
+                                 Edit
+                               </a>
+                               </div>
+                            </td>
+                            <td>
+                               <div class="d-grid">
+                                <a 
+                                href="#" 
+                                class="btn btn-sm btn-block btn-danger"
+                                 data-toggle="modal"
+                                  data-target="#employee_delete">
+                                  Delete
+                                </a>
+                               </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>John Doe</td>
+                            <td>johndoe@gmail.com</td>
+                            <td>
+                               <div class="d-grid">
+                                <a 
+                                href="#" 
+                                data-toggle="modal"
+                                 data-target="#employee_details1"
+                                  class="btn btn-sm btn-block btn-info">
+                                  Details
+                                </a>
+                               </div>
+                            </td>
+                            <td>
+                               <div class="d-grid">
+                                <a
+                                href="#" 
+                                data-toggle="modal" 
+                                data-target="#employee_edit_details1"
+                                 class="btn btn-sm btn-block btn-warning">
+                                 Edit
+                               </a>
+                               </div>
+                            </td>
+                            <td>
+                               <div class="d-grid">
+                                <a 
+                                href="#" 
+                                class="btn btn-sm btn-block btn-danger"
+                                 data-toggle="modal"
+                                  data-target="#employee_delete">
+                                  Delete
+                                </a>
+                               </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
             </div>
         </div>
     </div>
@@ -188,7 +329,10 @@
         <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Employee Details</h5>
+            <h5 class="modal-title"
+             id="exampleModalLabel">
+             Employee Datails
+            </h5>
             <button
              type="button" 
              class="close" 
@@ -228,27 +372,44 @@
         </div>
     </div>
 
-    <!-- Edit Employee Detaisl -->
+    <!-- Edit Employee Details -->
     <div class="modal fade" id="employee_edit_details1" tabindex="-1" aria-labelledby="employee_edit_details1" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <h1 
+              class="modal-title fs-5" 
+              id="exampleModalLabel"
+              >Modal title</h1>
+              <button 
+              type="button" 
+              class="btn-close" 
+              data-bs-dismiss="modal"
+               aria-label="Close"
+               ></button>
             </div>
             <div class="modal-body">
                 <form>
                     <div class="mb-3">
-                        <input type="date" class="form-control form-control-sm" required>
+                        <input 
+                        type="date"
+                         class="form-control form-control-sm" required>
                     </div>
                     <div class="mb-3">
-                        <input type="text" class="form-control form-control-sm" placeholder="Employee Name" required>
+                        <input 
+                        type="text" 
+                        class="form-control form-control-sm"
+                         placeholder="Employee Name" 
+                         required>
                     </div>
                     <div class="mb-3">
                         <input type="email" class="form-control form-control-sm" placeholder="Employee Email ID" required>
                     </div>
                     <div class="mb-3">
-                        <input type="tel" class="form-control form-control-sm" placeholder="Employee Phone Number" required>
+                        <input type="tel" 
+                        class="form-control form-control-sm"
+                         placeholder="Employee Phone Number" 
+                         required>
                     </div>
                     <div class="mb-3">
                         <select class="form-control form-control-sm">
