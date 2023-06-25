@@ -398,13 +398,13 @@
                 </div>
                 <div class="col-md-2">
                     
-                        <a 
-                        href="#"
-                        class="btn btn-sm btn-primary"
-                        data-bs-toggle="modal"
-                        >
-                        Close
-                        </a>
+                    <a 
+                    href="#" 
+                    class="btn btn-sm btn-primary"
+                     data-dismiss="modal"
+                    data-bs-toggle="modal">
+                   Close
+                </a>
                     
                 </div>
                </div>
@@ -422,7 +422,7 @@
               <h1 
               class="modal-title fs-5" 
               id="exampleModalLabel"
-              >Modal title</h1>
+              >Edit employees details</h1>
               <button 
               type="button" 
               class="btn-close" 
@@ -462,20 +462,24 @@
                     </div>
                    <div class="modal-footer">
                    <div class="row">
-                    <a 
+                    <div class="col-md-8">
+                        <a 
                     href="#" 
                     class="btn btn-sm btn-warning"
                     data-target="employee_delete"
                     data-bs-toggle="modal">
                     Delete
                 </a>
-                <a 
+                    </div>
+                <div class="col-md-4">
+                 <a
                 href="#" 
                 class="btn btn-sm btn-primary"
-                data-target="employee_delete"
+                data-dismiss="modal"
                 data-bs-toggle="modal">
                Close
-            </a>
+               </a>
+                </div>
                    </div>
                    </div>
                 </form>  
@@ -506,19 +510,26 @@
         </button>
             </div>
             <div class="modal-footer d-flex justify-content-center">
-                <button 
-                 type="submit"
-                class="btn btn-sm btn-danger"
-                >
-               YES!
-            </button>
-            <button
-              
-            class="btn btn-sm btn-warning"
-            data-bs-dismiss="modal"
-           aria-label="Close">
-          No, Go back
-        </button>
+             <div class="row">
+                <div class="col-md-8">
+                    <button 
+                    type="submit"
+                   class="btn btn-sm btn-danger"
+                   >
+                  YES!
+               </button>
+               
+                </div>
+                <div class="col-md-4">
+                    <button
+                 
+               class="btn btn-sm btn-warning"
+               data-dismiss="modal"
+              aria-label="Close">
+             No, Go back
+           </button>
+                </div>
+             </div>
             </div>
         </div>
         </div>

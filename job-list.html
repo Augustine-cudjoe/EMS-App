@@ -359,14 +359,14 @@
 
     <!-- Details Model -->
     <div class="modal fade" 
-    id="job_details1" 
+    id="job_details" 
     tabindex="-1" 
-    aria-labelledby="job_details1"
+    aria-labelledby="job_details"
      aria-hidden="true">
         <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Employee Details</h5>
+            <h5 class="modal-title" id="exampleModalLabel">Job Details</h5>
             <button
              type="button" 
              class="close" 
@@ -402,6 +402,33 @@
                     <td>Graphic Designer</td>
                 </tr>
             </table>
+            <div class="modal-footer">
+                <div class="row">
+                 <div class="col-md-10">
+                     
+                         <a 
+                         href="#"
+                         class="btn  btn-sm btn-warning text-center"
+                         data-bs-toggle="modal"
+                         data-bs-target="#job_edit">
+                         Edit job
+             
+                         </a>
+                    
+                 </div>
+                 <div class="col-md-2">
+                     
+                    <a 
+                    href="#" 
+                    class="btn btn-sm btn-primary"
+                     data-dismiss="modal"
+                    data-bs-toggle="modal">
+                   Close
+                </a>
+                     
+                 </div>
+                </div>
+             </div>
         </div>
         </div>
     </div>
@@ -409,7 +436,7 @@
     <!-- Details Model -->
 
     <!-- Edit Employee Details -->
-    <div class="modal fade" id="job_edit_details1" tabindex="-1" aria-labelledby="job_edit_details1" aria-hidden="true">
+    <div class="modal fade" id="job_edit" tabindex="-1" aria-labelledby="job_edit" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
@@ -439,20 +466,24 @@
                     </div>
                    <div class="modal-footer">
                    <div class="row">
-                    <a 
-                    href="#" 
-                    class="btn btn-sm btn-warning"
-                    data-target="employee_delete"
-                    data-bs-toggle="modal">
-                    Delete
-                </a>
+               <div class="col-md-8">
+                <a 
+                href="#" 
+                class="btn btn-sm btn-warning"
+                data-target="#job_delete"
+                data-bs-toggle="modal">
+                Delete
+            </a>
+               </div>
+               <div class="col-md-4">
                 <a 
                 href="#" 
                 class="btn btn-sm btn-primary"
-                data-target="employee_delete"
+                 data-dismiss="modal"
                 data-bs-toggle="modal">
-               Conceal
+               Close
             </a>
+               </div>
                    </div>
                    </div>
                 </form>  
@@ -477,7 +508,7 @@
             <div 
             class="modal-body text-center  d-flex justify-content-between align-center" >
         <h4 class="fw-light m-0">
-            Do you really  want to delete job <strong> <q>Graphic Design</q></strong>
+            Do you want to delete job <strong> <q>Graphic Design</q></strong>
         </h4>
         <button
          type="button"
@@ -494,13 +525,13 @@
                 >
                YES!
             </button>
-            <button
-              
-            class="btn btn-sm btn-warning"
-            data-bs-dismiss="modal"
-           aria-label="Close">
-          No, Go back
-        </button>
+            <a 
+            href="#" 
+            class="btn btn-sm btn-primary"
+             data-dismiss="modal"
+            data-bs-toggle="modal">
+           Back
+        </a>
             </div>
         </div>
         </div>
@@ -556,8 +587,8 @@
                                 <button 
                                 type="button" 
                                 class="btn btn-sm btn-warning "
-                                data-bs-dismiss="model"
-                                aria-label="Close">
+                                data-bs-dismiss="modal"
+                                >
                                 Close
                             </button>
                             </div>
@@ -618,7 +649,7 @@
                 </a>
                 <button 
                 type="button" 
-                class="btn-close btn-secondary" 
+                class="btn btn-secondary" 
                 data-bs-dismiss="modal"
                 aria-label="Close">
                 Close
@@ -666,7 +697,7 @@
                                     <button 
                                     type="button" 
                                     class="btn btn-sm btn-danger "
-                                    data-bs-dismiss="model"
+                                    data-bs-dismiss="modal"
                                    >
                                     Close
                                 </button>
