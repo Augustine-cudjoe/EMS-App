@@ -5,35 +5,42 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    
+
+    <title>Employees</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
    
-
-    <title>Employees</title>
-    <script>
-    .navbar-brand{
-           
-        background: #1986CF;
-        background: linear-gradient(to top, #1986CF 0%, #4BCF23 100%);
-       -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-
-    }
-       
-    </script>
+    <style>
+        .brand-gradient{
+            background: #1986CF;
+            background: linear-gradient(to top, #1986CF 0%, #4BCF23 100%);
+            -webkit-background-clip: text;
+             -webkit-text-fill-color: transparent;
+    
+        }
+        .vr{
+            color: red;
+        }
+      </style>
   </head>
   <body>
     
     <!-- nav -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-          <a class="navbar-brand" href="dash.html">EMS.2</a>
+          <a class="navbar-brand" href="dash.html">
+            <span class="brand-gradient">EMS.2</span>
+          </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+                <div class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="dash.html">Home</a>
+                  </div>
               <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="employees.html">Employees</a>
               </li>
@@ -48,7 +55,7 @@
                 </div>
             </form>
 
-            <a href="#" class="ml-3 btn btn-sm btn-warning">Log Out</a>
+            <a href="dash.html" class="ml-3 btn btn-sm btn-warning">Log Out</a>
 
           </div>
         </div>
@@ -65,7 +72,7 @@
                     class="list-group-item list-group-item-active" 
                     data-toggle="modal" 
                     data-target="#add_job">
-                    Add Employee
+                    Add Job
                 </a>
                     <a 
                     href="job-list.html" 
@@ -107,7 +114,7 @@
                                     <a
                                      href="#" 
                                      data-toggle="modal"
-                                      data-target="#employee_details1" 
+                                      data-target="#job_details" 
                                       class="btn btn-sm btn-block btn-info">
                                       Details
                                     </a>
@@ -121,7 +128,7 @@
                                     <a 
                                     href="#" 
                                     data-toggle="modal"
-                                     data-target="#employee_edit_details1" 
+                                     data-target="#job_edit" 
                                      class="btn btn-sm btn-block btn-warning">
                                      Edit
                                     </a>
@@ -129,9 +136,16 @@
                                  </div>   
                                 </td>
                             <td>
-                              <div class="d-gri">
+                              <div class="d-grid">
 
-                                <a href="#" class="btn btn-sm btn-block btn-danger" data-toggle="modal" data-target="#employee_delete">Delete</a></td>
+                                <a 
+                                href="#" 
+                                class="btn btn-sm btn-block btn-danger"
+                                 data-toggle="modal" 
+                                 data-target="#job_delete">
+                                 Delete
+                                </a>
+                            </td>
                           
                               </div>    
                             </tr>
@@ -144,7 +158,7 @@
                                         <a
                                          href="#" 
                                          data-toggle="modal"
-                                          data-target="#employee_details1" 
+                                          data-target="#job_details" 
                                           class="btn btn-sm btn-block btn-info">
                                           Details
                                         </a>
@@ -158,7 +172,7 @@
                                         <a 
                                         href="#" 
                                         data-toggle="modal"
-                                         data-target="#employee_edit_details1" 
+                                         data-target="#job_edit" 
                                          class="btn btn-sm btn-block btn-warning">
                                          Edit
                                         </a>
@@ -166,9 +180,16 @@
                                      </div>   
                                     </td>
                                 <td>
-                                  <div class="d-gri">
+                                  <div class="d-grid">
     
-                                    <a href="#" class="btn btn-sm btn-block btn-danger" data-toggle="modal" data-target="#employee_delete">Delete</a></td>
+                                    <a 
+                                    href="#" 
+                                    class="btn btn-sm btn-block btn-danger"
+                                     data-toggle="modal" 
+                                     data-target="#job_delete">
+                                     Delete
+                                    </a>
+                                </td>
                               
                                   </div>    
                                 </tr>
@@ -181,7 +202,7 @@
                                             <a
                                              href="#" 
                                              data-toggle="modal"
-                                              data-target="#employee_details1" 
+                                              data-target="#job_details" 
                                               class="btn btn-sm btn-block btn-info">
                                               Details
                                             </a>
@@ -195,7 +216,7 @@
                                             <a 
                                             href="#" 
                                             data-toggle="modal"
-                                             data-target="#employee_edit_details1" 
+                                             data-target="#job_edit" 
                                              class="btn btn-sm btn-block btn-warning">
                                              Edit
                                             </a>
@@ -203,9 +224,16 @@
                                          </div>   
                                         </td>
                                     <td>
-                                      <div class="d-gri">
+                                      <div class="d-grid">
         
-                                        <a href="#" class="btn btn-sm btn-block btn-danger" data-toggle="modal" data-target="#employee_delete">Delete</a></td>
+                                        <a 
+                                        href="#"
+                                         class="btn btn-sm btn-block btn-danger"
+                                          data-toggle="modal" 
+                                          data-target="#job_delete">
+                                          Delete
+                                        </a>
+                                    </td>
                                   
                                       </div>    
                                     </tr>
@@ -218,7 +246,7 @@
                                                 <a
                                                  href="#" 
                                                  data-toggle="modal"
-                                                  data-target="#employee_details1" 
+                                                  data-target="#job_details" 
                                                   class="btn btn-sm btn-block btn-info">
                                                   Details
                                                 </a>
@@ -232,7 +260,7 @@
                                                 <a 
                                                 href="#" 
                                                 data-toggle="modal"
-                                                 data-target="#employee_edit_details1" 
+                                                 data-target="#job_edit" 
                                                  class="btn btn-sm btn-block btn-warning">
                                                  Edit
                                                 </a>
@@ -240,9 +268,16 @@
                                              </div>   
                                             </td>
                                         <td>
-                                          <div class="d-gri">
+                                          <div class="d-grid">
             
-                                            <a href="#" class="btn btn-sm btn-block btn-danger" data-toggle="modal" data-target="#employee_delete">Delete</a></td>
+                                            <a 
+                                            href="#"
+                                             class="btn btn-sm btn-block btn-danger" 
+                                             data-toggle="modal" 
+                                             data-target="#job_delete">
+                                             Delete
+                                            </a>
+                                        </td>
                                       
                                           </div>    
                                         </tr>
@@ -371,7 +406,9 @@
         </div>
     </div>
 
-    <!-- Edit Employee Detaisl -->
+    <!-- Details Model -->
+
+    <!-- Edit Employee Details -->
     <div class="modal fade" id="job_edit_details1" tabindex="-1" aria-labelledby="job_edit_details1" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
@@ -425,7 +462,7 @@
         </div>
       </div>
 
-    <!-- Edit Employee Detaisl -->
+    <!-- Edit Employee Details -->
    
     <!--Delete modal-->
     <div class="modal fade" 
@@ -440,7 +477,7 @@
             <div 
             class="modal-body text-center  d-flex justify-content-between align-center" >
         <h4 class="fw-light m-0">
-            Do you want to delete <strong> <q>Joh Doe</q></strong>
+            Do you really  want to delete job <strong> <q>Graphic Design</q></strong>
         </h4>
         <button
          type="button"
@@ -469,6 +506,183 @@
         </div>
     </div>
     <!--Delete modal-->
+
+    <!--Add job modal-->
+    <div 
+    class="modal fade"
+     id="add_job" 
+     tabindex="-1" 
+     aria-labelledby="add_job" 
+     aria-hidden="true"
+     >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header bg-dark ">
+              <h1 class="modal-title fs-5 text-center" 
+              id="exampleModalLabel"
+              >
+              Add Job Details
+            </h1>
+              <button 
+              type="button" 
+              class="btn-close"
+               data-bs-dismiss="modal"
+                aria-label="Close"
+                ></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <input type="date" class="form-control form-control-sm" required>
+                    </div>
+                    <div class="mb-3">
+                        <input type="text" class="form-control form-control-sm" placeholder="Job Name" required>
+                    </div>
+                   
+        
+                   <div class="modal-footer">
+                    <div class="row">
+                        <div class="col-md-10">
+                            <div class=" d-grid">
+                                <button
+                                 type="submit" 
+                                 class="btn btn-sm btn-success ">
+                                 Add New Job
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="d-grid">
+                                <button 
+                                type="button" 
+                                class="btn btn-sm btn-warning "
+                                data-bs-dismiss="model"
+                                aria-label="Close">
+                                Close
+                            </button>
+                            </div>
+                        </div>
+                    </div>
+                   </div>
+                </form>  
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    <!--Add job modal-->
+
+    <!--Add Job Details modal-->
+    <div class="modal fade" 
+    id="job_details" 
+    tabindex="-1" 
+    aria-labelledby="job_details"
+     aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Job Details</h5>
+            <button
+             type="button" 
+             class="close" 
+             data-dismiss="modal" 
+             aria-label="Close"
+             >
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <table class="table table-bordered">
+                <tr>
+                    <th>ID</th>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <th>Job Date</th>
+                    <td>29 July 2020</td>
+                </tr>
+                <tr>
+                    <th>Job Name</th>
+                    <td>Graphics Design</td>
+                </tr>
+                
+               
+            </table>
+            <div class="modal-footer">
+                <a 
+                href="#"
+                class="btn  btn-sm btn-warning"
+                data-bs-toggle="modal"
+                data-bs-target="#job_edit">
+                Edit Job
+    
+                </a>
+                <button 
+                type="button" 
+                class="btn-close btn-secondary" 
+                data-bs-dismiss="modal"
+                aria-label="Close">
+                Close
+            </button>
+            </div>
+        </div>
+        
+        </div>
+    </div>
+
+    <!--Add Job Details modal-->
+
+    <!-- Job Edit  Details -->
+    <div class="modal fade" id="job_edit" tabindex="-1" aria-labelledby="job_edit" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header  ">
+              <h1 class="modal-title fs-5 text-center " id="exampleModalLabel">Edit Job</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="mb-3">
+                                <input type="date" class="form-control form-control-sm" value="2022-10-10" required>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="mb-3">
+                                <input type="text" class="form-control form-control-sm" placeholder="Job Name" value="Graphic Designer" required>
+                            </div>
+                        </div>
+                         <div class="col-md-10">
+                                <div class=" d-grid">
+                                    <button
+                                     type="submit" 
+                                     class="btn btn-sm btn-warning ">
+                                     Update Job
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="d-grid">
+                                    <button 
+                                    type="button" 
+                                    class="btn btn-sm btn-danger "
+                                    data-bs-dismiss="model"
+                                   >
+                                    Close
+                                </button>
+                                
+                        </div>
+                       </div>
+                    </div>
+                </form> 
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
+    <!--Job Edit  Details -->
+    
 
     <!-- Optional JavaScript -->
     <!-- Popper.js first, then Bootstrap JS -->

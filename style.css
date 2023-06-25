@@ -1,0 +1,23 @@
+body{
+    background-color: gainsboro;
+}
+
+.brand-gradient{
+    background: #1986CF;
+background: linear-gradient(to top, #1986CF 0%, #4BCF23 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+
+}
+.vr{
+    color:white;
+}
+
+
+.bx{
+    box-shadow: 2px 2px 18px rgba(0,0,0,0.2);
+}
+.card-border{
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+    border: 0px;
+}

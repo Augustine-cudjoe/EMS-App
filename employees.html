@@ -5,35 +5,49 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    
+
+    <title>Employees</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-   
-
-    <title>Employees</title>
-    <script>
-    .navbar-brand{
-           
-        background: #1986CF;
-        background: linear-gradient(to top, #1986CF 0%, #4BCF23 100%);
-       -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-
-    }
-       
-    </script>
+    <style>
+        .brand-gradient{
+            background: #1986CF;
+            background: linear-gradient(to top, #1986CF 0%, #4BCF23 100%);
+            -webkit-background-clip: text;
+             -webkit-text-fill-color: transparent;
+    
+        }
+        .vr{
+            color: red;
+        }
+      </style>
   </head>
   <body>
     
     <!-- nav -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-          <a class="navbar-brand" href="dash.html">EMS.2</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <a class="navbar-brand" href="dash.html">
+            <span class="brand-gradient">EMS.2</span>
+          </a>
+          <button
+           class="navbar-toggler" 
+           type="button"
+            data-toggle="collapse" 
+            data-target="#navbarSupportedContent" 
+            aria-controls="navbarSupportedContent" 
+            aria-expanded="false" 
+            aria-label="Toggle navigation"
+            >
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+                <div class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="dash.html">Home</a>
+                  </div>
               <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="employees.html">Employees</a>
               </li>
@@ -48,7 +62,7 @@
                 </div>
             </form>
 
-            <a href="#" class="ml-3 btn btn-sm btn-warning">Log Out</a>
+            <a href="dash.html" class="ml-3 btn btn-sm btn-warning">Log Out</a>
 
           </div>
         </div>
@@ -269,7 +283,7 @@
               <h1 class="modal-title fs-5" 
               id="exampleModalLabel"
               >
-              Modal title
+           Add Employees
             </h1>
               <button 
               type="button" 
@@ -335,7 +349,7 @@
             </h5>
             <button
              type="button" 
-             class="close" 
+             class="btn-close" 
              data-dismiss="modal" 
              aria-label="Close"
              >
@@ -368,7 +382,35 @@
                     <td>Graphic Designer</td>
                 </tr>
             </table>
+            <div class="modal-footer">
+               <div class="row">
+                <div class="col-md-10">
+                    
+                        <a 
+                        href="#"
+                        class="btn  btn-sm btn-warning text-center"
+                        data-bs-toggle="modal"
+                        data-bs-target="#employee_edit_details1">
+                        Edith employees
+            
+                        </a>
+                   
+                </div>
+                <div class="col-md-2">
+                    
+                        <a 
+                        href="#"
+                        class="btn btn-sm btn-primary"
+                        data-bs-toggle="modal"
+                        >
+                        Close
+                        </a>
+                    
+                </div>
+               </div>
+            </div>
         </div>
+        
         </div>
     </div>
 
@@ -432,7 +474,7 @@
                 class="btn btn-sm btn-primary"
                 data-target="employee_delete"
                 data-bs-toggle="modal">
-               Conceal
+               Close
             </a>
                    </div>
                    </div>
@@ -482,6 +524,7 @@
         </div>
     </div>
     <!--Delete modal-->
+    
 
     <!-- Optional JavaScript -->
     <!-- Popper.js first, then Bootstrap JS -->
