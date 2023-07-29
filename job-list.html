@@ -11,7 +11,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-   
+    <link rel="stylesheet" href="style.css">
     <style>
         .brand-gradient{
             background: #1986CF;
@@ -29,7 +29,7 @@
     
     <!-- nav -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
+        <div class="container">
           <a class="navbar-brand" href="dash.html">
             <span class="brand-gradient">EMS.2</span>
           </a>
@@ -48,14 +48,16 @@
                 <a class="nav-link" href="job-list.html">Jobs</a>
               </li>
             </ul>
-            <form class="d-flex">
-                <div class="input-group">
+            <form class="d-flex" role="search">
+                <div class="input-group hstack gap-3 me-3">
                     <input type="search" class="form-control form-control-sm" placeholder="Search.." aria-label="Recipient's username" aria-describedby="button-addon2">
                     <button class="btn btn-sm btn-success" type="submit" id="button-addon2"><i class="fa fa-search"></i></button>
                 </div>
+
+                <a href="dash.html" class="ml-3 btn btn-sm btn-warning">LogOut</a>
             </form>
 
-            <a href="dash.html" class="ml-3 btn btn-sm btn-warning">Log Out</a>
+           
 
           </div>
         </div>
@@ -63,7 +65,7 @@
     <!-- nav -->
 
     <!-- dashboard contents -->
-    <div class="container-fluid">
+    <div class="container mt-3">
         <div class="row justify-content-center">
             <div class=" col-md-2">
                 <div class="list-group  shadow-sm small mb-3">
@@ -92,81 +94,40 @@
                 </a>
                 </div>
             </div>
-            <div class="col-lg-10 col-md-10">
-                <div class="card shadow-sm border-0 mb-3">
+            <div class="col-lg-10 col-md-10  table-responsive-sm ">
+                <div class="card shadow-sm border-0 mb-1">
                     <div class="card-header text-bg-dark text-center">Job List</div>
 
-                    <table class="table table-striped table-hover bg-light small">
-                        <tr class="table-secondary">
-                            <th>ID</th>
-                            <th>Job Name</th>
-                           
-                            <th>Details</th>
-                            <th>Edit</th>
-                            <th>Delete</th>
-                        </tr>
-                        <tr>
-                            <td>1</td>
-                            <td>Graphics Designer</td>
-                           
-                            <td>
-                                <div class="d-grid">
-                                    <a
-                                     href="#" 
-                                     data-toggle="modal"
-                                      data-target="#job_details" 
-                                      class="btn btn-sm btn-block btn-info">
-                                      Details
-                                    </a>
-
-                                </div>
-                                </td>
-                            
-                                <td>
-                                 <div class="d-grid">
-
-                                    <a 
-                                    href="#" 
-                                    data-toggle="modal"
-                                     data-target="#job_edit" 
-                                     class="btn btn-sm btn-block btn-warning">
-                                     Edit
-                                    </a>
+                    <table class="table table-striped-columns table-hover bg-light small">
+                        <thead >
+                            <tr class="table-secondary">
+                                <th>ID</th>
+                                <th >Job Name</th>
                                
-                                 </div>   
-                                </td>
-                            <td>
-                              <div class="d-grid">
-
-                                <a 
-                                href="#" 
-                                class="btn btn-sm btn-block btn-danger"
-                                 data-toggle="modal" 
-                                 data-target="#job_delete">
-                                 Delete
-                                </a>
-                            </td>
-                          
-                              </div>    
+                                <th>Details</th>
+                                <th>Edit</th>
+                                <th>Delete</th>
                             </tr>
+                        </thead>
+                        <tbody>
                             <tr>
-                                <td>2</td>
-                                <td>Web Designer</td>
+                                <td class="data-label">1</td>
+                                <td class="data-label">Graphics Designer</td>
                                
-                                <td>
+                                <td class="data-label">
                                     <div class="d-grid">
                                         <a
                                          href="#" 
                                          data-toggle="modal"
                                           data-target="#job_details" 
                                           class="btn btn-sm btn-block btn-info">
-                                          Details
+                                          Dets
                                         </a>
     
                                     </div>
                                     </td>
                                 
-                                    <td>
+                                    <td class="data-label">
                                      <div class="d-grid">
     
                                         <a 
@@ -179,7 +140,7 @@
                                    
                                      </div>   
                                     </td>
-                                <td>
+                                <td class="data-label">
                                   <div class="d-grid">
     
                                     <a 
@@ -187,30 +148,30 @@
                                     class="btn btn-sm btn-block btn-danger"
                                      data-toggle="modal" 
                                      data-target="#job_delete">
-                                     Delete
+                                     Del
                                     </a>
                                 </td>
                               
                                   </div>    
                                 </tr>
                                 <tr>
-                                    <td>3</td>
-                                    <td>fashion Designer</td>
+                                    <td class="data-label">2</td>
+                                    <td class="data-label">Web Designer</td>
                                    
-                                    <td>
+                                    <td class="data-label">
                                         <div class="d-grid">
                                             <a
                                              href="#" 
                                              data-toggle="modal"
                                               data-target="#job_details" 
                                               class="btn btn-sm btn-block btn-info">
-                                              Details
+                                              Dets
                                             </a>
         
                                         </div>
                                         </td>
                                     
-                                        <td>
+                                        <td class="data-label">
                                          <div class="d-grid">
         
                                             <a 
@@ -223,38 +184,38 @@
                                        
                                          </div>   
                                         </td>
-                                    <td>
+                                    <td class="data-label">
                                       <div class="d-grid">
         
                                         <a 
-                                        href="#"
-                                         class="btn btn-sm btn-block btn-danger"
-                                          data-toggle="modal" 
-                                          data-target="#job_delete">
-                                          Delete
+                                        href="#" 
+                                        class="btn btn-sm btn-block btn-danger"
+                                         data-toggle="modal" 
+                                         data-target="#job_delete">
+                                         Del
                                         </a>
                                     </td>
                                   
                                       </div>    
                                     </tr>
                                     <tr>
-                                        <td>4</td>
-                                        <td>material Designer</td>
+                                        <td class="data-label">3</td>
+                                        <td class="data-label">fashion Designer</td>
                                        
-                                        <td>
+                                        <td class="data-label">
                                             <div class="d-grid">
                                                 <a
                                                  href="#" 
                                                  data-toggle="modal"
                                                   data-target="#job_details" 
                                                   class="btn btn-sm btn-block btn-info">
-                                                  Details
+                                                  Dets
                                                 </a>
             
                                             </div>
                                             </td>
                                         
-                                            <td>
+                                            <td class="data-label">
                                              <div class="d-grid">
             
                                                 <a 
@@ -267,22 +228,67 @@
                                            
                                              </div>   
                                             </td>
-                                        <td>
+                                        <td class="data-label">
                                           <div class="d-grid">
             
                                             <a 
                                             href="#"
-                                             class="btn btn-sm btn-block btn-danger" 
-                                             data-toggle="modal" 
-                                             data-target="#job_delete">
-                                             Delete
+                                             class="btn btn-sm btn-block btn-danger"
+                                              data-toggle="modal" 
+                                              data-target="#job_delete">
+                                              Del
                                             </a>
                                         </td>
                                       
                                           </div>    
                                         </tr>
-                                              
-                      
+                                        <tr>
+                                            <td class="data-label">4</td>
+                                            <td class="data-label">material Designer</td>
+                                           
+                                            <td class="data-label">
+                                                <div class="d-grid">
+                                                    <a
+                                                     href="#" 
+                                                     data-toggle="modal"
+                                                      data-target="#job_details" 
+                                                      class="btn btn-sm btn-block btn-info">
+                                                      Dets
+                                                    </a>
+                
+                                                </div>
+                                                </td>
+                                            
+                                                <td class="data-label">
+                                                 <div class="d-grid">
+                
+                                                    <a 
+                                                    href="#" 
+                                                    data-toggle="modal"
+                                                     data-target="#job_edit" 
+                                                     class="btn btn-sm btn-block btn-warning">
+                                                     Edit
+                                                    </a>
+                                               
+                                                 </div>   
+                                                </td>
+                                            <td class="data-label">
+                                              <div class="d-grid">
+                
+                                                <a 
+                                                href="#"
+                                                 class="btn btn-sm btn-block btn-danger" 
+                                                 data-toggle="modal" 
+                                                 data-target="#job_delete">
+                                                 Del
+                                                </a>
+                                            </td>
+                                          
+                                              </div>    
+                                            </tr>
+                                                  
+                          
+                        </tbody>
                     </table>
                 </div>
                 
@@ -587,7 +593,8 @@
                                 <button 
                                 type="button" 
                                 class="btn btn-sm btn-warning "
-                                data-bs-dismiss="modal"
+                                data-dismiss="modal"
+                                aria-label="Close"
                                 >
                                 Close
                             </button>

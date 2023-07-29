@@ -11,6 +11,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
     <style>
         .brand-gradient{
             background: #1986CF;
@@ -28,7 +29,7 @@
     
     <!-- nav -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
+        <div class="container">
           <a class="navbar-brand" href="dash.html">
             <span class="brand-gradient">EMS.2</span>
           </a>
@@ -55,14 +56,18 @@
                 <a class="nav-link" href="job-list.html">Jobs</a>
               </li>
             </ul>
-            <form class="d-flex">
-                <div class="input-group">
-                    <input type="search" class="form-control form-control-sm" placeholder="Search.." aria-label="Recipient's username" aria-describedby="button-addon2">
-                    <button class="btn btn-sm btn-success" type="submit" id="button-addon2"><i class="fa fa-search"></i></button>
-                </div>
-            </form>
+          
+                <form class="d-flex" role="search">
+                    <div class="input-group hstack gap-3 me-3">
+                        <input type="search" class="form-control form-control-sm" placeholder="Search.." aria-label="Recipient's username" aria-describedby="button-addon2">
+                        <button class="btn btn-sm btn-success" type="submit" id="button-addon2"><i class="fa fa-search"></i></button>
+                    </div>
 
-            <a href="dash.html" class="ml-3 btn btn-sm btn-warning">Log Out</a>
+                    <a href="dash.html" class="ml-3 btn btn-sm btn-warning">LogOut</a>
+                </form>
+    
+               
+            
 
           </div>
         </div>
@@ -70,7 +75,7 @@
     <!-- nav -->
 
     <!-- dashboard contents -->
-    <div class="container-fluid">
+    <div class="container">
         <div class="row justify-content-center">
             <div class=" col-md-2">
                 <div class="list-group  shadow-sm small mb-3">
@@ -95,178 +100,201 @@
                 </a>
                 </div>
             </div>
-            <div class="col-md-10">
+            <div class="col-md-10 ">
                 <div class="card shadow-sm border-0 mb-3">
-                    <div class="card-header text-bg-dark text-center">Job List</div>
+                    <div class="card-header text-bg-dark text-center">Employees List</div>
 
-                    <table class="table table-striped table-hover bg-light small">
-                        <tr class="table-secondary">
-                            <th>ID</th>
-                            <th>Job Name</th>
-                            <th> Email</th>
-                            <th>Details</th>
-                            <th>Edit</th>
-                            <th>Delete</th>
-                        </tr>
-                        <tr>
-                            <td>1</td>
-                            <td>John Doe</td>
-                            <td>johndoe@gmail.com</td>
-                            <td>
-                               <div class="d-grid">
-                                <a 
-                                href="#" 
-                                data-toggle="modal"
-                                 data-target="#employee_details1"
-                                  class="btn btn-sm btn-block btn-info">
-                                  Details
-                                </a>
-                               </div>
-                            </td>
-                            <td>
-                               <div class="d-grid">
-                                <a
-                                href="#" 
-                                data-toggle="modal" 
-                                data-target="#employee_edit_details1"
-                                 class="btn btn-sm btn-block btn-warning">
-                                 Edit
-                               </a>
-                               </div>
-                            </td>
-                            <td>
-                               <div class="d-grid">
-                                <a 
-                                href="#" 
-                                class="btn btn-sm btn-block btn-danger"
-                                 data-toggle="modal"
-                                  data-target="#employee_delete">
-                                  Delete
-                                </a>
-                               </div>
-                            </td>
-                        </tr>
-                       
-                        <tr>
-                            <td>2</td>
-                            <td>John Doe</td>
-                            <td>johndoe@gmail.com</td>
-                            <td>
-                               <div class="d-grid">
-                                <a 
-                                href="#" 
-                                data-toggle="modal"
-                                 data-target="#employee_details1"
-                                  class="btn btn-sm btn-block btn-info">
-                                  Details
-                                </a>
-                               </div>
-                            </td>
-                            <td>
-                               <div class="d-grid">
-                                <a
-                                href="#" 
-                                data-toggle="modal" 
-                                data-target="#employee_edit_details1"
-                                 class="btn btn-sm btn-block btn-warning">
-                                 Edit
-                               </a>
-                               </div>
-                            </td>
-                            <td>
-                               <div class="d-grid">
-                                <a 
-                                href="#" 
-                                class="btn btn-sm btn-block btn-danger"
-                                 data-toggle="modal"
-                                  data-target="#employee_delete">
-                                  Delete
-                                </a>
-                               </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>John Doe</td>
-                            <td>johndoe@gmail.com</td>
-                            <td>
-                               <div class="d-grid">
-                                <a 
-                                href="#" 
-                                data-toggle="modal"
-                                 data-target="#employee_details1"
-                                  class="btn btn-sm btn-block btn-info">
-                                  Details
-                                </a>
-                               </div>
-                            </td>
-                            <td>
-                               <div class="d-grid">
-                                <a
-                                href="#" 
-                                data-toggle="modal" 
-                                data-target="#employee_edit_details1"
-                                 class="btn btn-sm btn-block btn-warning">
-                                 Edit
-                               </a>
-                               </div>
-                            </td>
-                            <td>
-                               <div class="d-grid">
-                                <a 
-                                href="#" 
-                                class="btn btn-sm btn-block btn-danger"
-                                 data-toggle="modal"
-                                  data-target="#employee_delete">
-                                  Delete
-                                </a>
-                               </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>4</td>
-                            <td>John Doe</td>
-                            <td>johndoe@gmail.com</td>
-                            <td>
-                               <div class="d-grid">
-                                <a 
-                                href="#" 
-                                data-toggle="modal"
-                                 data-target="#employee_details1"
-                                  class="btn btn-sm btn-block btn-info">
-                                  Details
-                                </a>
-                               </div>
-                            </td>
-                            <td>
-                               <div class="d-grid">
-                                <a
-                                href="#" 
-                                data-toggle="modal" 
-                                data-target="#employee_edit_details1"
-                                 class="btn btn-sm btn-block btn-warning">
-                                 Edit
-                               </a>
-                               </div>
-                            </td>
-                            <td>
-                               <div class="d-grid">
-                                <a 
-                                href="#" 
-                                class="btn btn-sm btn-block btn-danger"
-                                 data-toggle="modal"
-                                  data-target="#employee_delete">
-                                  Delete
-                                </a>
-                               </div>
-                            </td>
-                        </tr>
+                  <div class="table-responsive-sm  ">
+                    <table class="table table-dark table-striped table-hover small ">
+                        <thead >
+                            <tr class="table-secondary">
+                                <th class="d-none d-sm-table-cell">ID</th>
+                                <th >Job Name</th>
+                                <th> Email</th>
+                                <th class="d-none d-sm-table-cell">Details</th>
+                                <th>Edit</th>
+                                <th>Delete</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            
+                            <tr>
+                                <td class="d-none">1</td>
+                                <td>John Doe</td>
+                                <td class="email">joh@gmail.com</td>
+                                <td>
+                                   <div class="d-grid">
+                                    <a 
+                                    class="d-none"
+                                    href="#" 
+                                    data-toggle="modal"
+                                     data-target="#employee_details1"
+                                      class="btn btn-sm btn-block btn-info">
+                                      Dets
+                                    </a>
+                                   </div>
+                                </td>
+                                <td>
+                                   <div class="d-grid">
+                                    <a
+                                    href="#" 
+                                    data-toggle="modal" 
+                                    data-target="#employee_edit_details1"
+                                     class="btn btn-sm btn-block btn-warning">
+                                     Edit
+                                   </a>
+                                   </div>
+                                </td>
+                                <td>
+                                   <div class="d-grid">
+                                    <a 
+                                    href="#" 
+                                    class="btn btn-sm btn-block btn-danger"
+                                     data-toggle="modal"
+                                      data-target="#employee_delete">
+                                      Del
+                                    </a>
+                                   </div>
+                                </td>
+                            </tr>
+                           
+                            <tr>
+                                <td class="d-none d-sm-table-cell">2</td>
+                                <td>John Doe</td>
+                                <td class="email">johe@gmail.com</td>
+                                <td>
+                                   <div class="d-grid">
+                                    <a 
+                                    class="d-none d-sm-table-cell"
+                                    href="#" 
+                                    data-toggle="modal"
+                                     data-target="#employee_details1"
+                                      class="btn btn-sm btn-block btn-info">
+                                      Dets
+                                    </a>
+                                   </div>
+                                </td>
+                                <td>
+                                   <div class="d-grid">
+                                    <a
+                                    href="#" 
+                                    data-toggle="modal" 
+                                    data-target="#employee_edit_details1"
+                                     class="btn btn-sm btn-block btn-warning">
+                                     Edit
+                                   </a>
+                                   </div>
+                                </td>
+                                <td>
+                                   <div class="d-grid">
+                                    <a 
+                                    href="#" 
+                                    class="btn btn-sm btn-block btn-danger"
+                                     data-toggle="modal"
+                                      data-target="#employee_delete">
+                                      Del
+                                    </a>
+                                   </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="d-none d-sm-table-cell">3</td>
+                                <td>John Doe</td>
+                                <td class="email">joh@gmail.com</td>
+                                <td>
+                                   <div class="d-grid">
+                                    <a 
+                                    href="#"
+                                    class="d-none" 
+                                    data-toggle="modal"
+                                     data-target="#employee_details1"
+                                      class="btn btn-sm btn-block btn-info">
+                                      Dets
+                                    </a>
+                                   </div>
+                                </td>
+                                <td>
+                                   <div class="d-grid">
+                                    <a
+                                    href="#" 
+                                    data-toggle="modal" 
+                                    data-target="#employee_edit_details1"
+                                     class="btn btn-sm btn-block btn-warning">
+                                     Edit
+                                   </a>
+                                   </div>
+                                </td>
+                                <td>
+                                   <div class="d-grid">
+                                    <a 
+                                    href="#" 
+                                    class="btn btn-sm btn-block btn-danger"
+                                     data-toggle="modal"
+                                      data-target="#employee_delete">
+                                      Del
+                                    </a>
+                                   </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="d-none d-sm-table-cell">4</td>
+                                <td>John Doe</td>
+                                <td class="email">joe@gmail.com</td>
+                                <td>
+                                   <div class="d-grid">
+                                    <a 
+                                    class="d-none d-sm-table-cell"
+                                    href="#" 
+                                    data-toggle="modal"
+                                     data-target="#employee_details1"
+                                      class="btn btn-sm btn-block btn-info">
+                                      Dets
+                                    </a>
+                                   </div>
+                                </td>
+                                <td>
+                                   <div class="d-grid">
+                                    <a
+                                    href="#" 
+                                    data-toggle="modal" 
+                                    data-target="#employee_edit_details1"
+                                     class="btn btn-sm btn-block btn-warning">
+                                     Edit
+                                   </a>
+                                   </div>
+                                </td>
+                                <td>
+                                   <div class="d-grid">
+                                    <a 
+                                    href="#" 
+                                    class="btn btn-sm btn-block btn-danger"
+                                     data-toggle="modal"
+                                      data-target="#employee_delete">
+                                      Del
+                                    </a>
+                                   </div>
+                                </td>
+                            </tr>
+                        </tbody>
                     </table>
+                  </div>
+
+    <!-- display employees -->
+
+           <div id="addemployee">
+
+           </div>
+      
+
+    <!-- display employees -->
                 </div>
             </div>
         </div>
     </div>
     <!-- dashboard contents -->
+
+   
+
 
     <!-- Add Employee Modal -->
     
@@ -295,16 +323,35 @@
             <div class="modal-body">
                 <form>
                     <div class="mb-3">
-                        <input type="date" class="form-control form-control-sm" required>
+                        <input
+                         type="date" 
+                         class="form-control form-control-sm"
+                         id="date"
+                          required>
                     </div>
                     <div class="mb-3">
-                        <input type="text" class="form-control form-control-sm" placeholder="Employee Name" required>
+                        <input 
+                        type="text" 
+                        class="form-control form-control-sm"
+                         placeholder="Employee Name" 
+                         id="text"
+                         required>
                     </div>
                     <div class="mb-3">
-                        <input type="email" class="form-control form-control-sm" placeholder="Employee Email ID" required>
+                        <input
+                         type="email" 
+                         class="form-control form-control-sm" 
+                         placeholder="Employee Email ID" 
+                         id="email"
+                         required>
                     </div>
                     <div class="mb-3">
-                        <input type="tel" class="form-control form-control-sm" placeholder="Employee Phone Number" required>
+                        <input 
+                        type="tel" 
+                        class="form-control form-control-sm"
+                         placeholder="Employee Phone Number"
+                         id="tel" 
+                         required>
                     </div>
                     <div class="mb-3">
                         <select class="form-control form-control-sm">
@@ -317,19 +364,20 @@
                     <div class="row">
                         <div class="col-md-9">
                             <div class="mb-3">
-                                <button type="submit" class="btn btn-sm btn-success btn-block">Add New Employee</button>
+                                <button type="submit" class="btn btn-sm btn-success btn-block" id="addNew">Add New Employee</button>
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="mb-3">
-                                <button type="button" class="btn btn-sm btn-warning btn-block">Conceal</button>
+                                <button type="button" class="btn-close btn-warning" data-dismiss="modal" data-bs-toggle="modal" aria-label="Close" id="close_button">Close</button>
                             </div>
                         </div>
                     </div>
                    </div>
                 </form>  
             </div>
-            
+          
+           
           </div>
         </div>
       </div>
@@ -435,7 +483,9 @@
                     <div class="mb-3">
                         <input 
                         type="date"
-                         class="form-control form-control-sm" required>
+                         class="form-control
+                          form-control-sm"
+                           required>
                     </div>
                     <div class="mb-3">
                         <input 
@@ -484,7 +534,7 @@
                    </div>
                 </form>  
             </div>
-            
+           
           </div>
         </div>
       </div>
@@ -539,6 +589,7 @@
 
     <!-- Optional JavaScript -->
     <!-- Popper.js first, then Bootstrap JS -->
+    <script src="script.js"></script>    
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
   </body>

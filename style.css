@@ -1,0 +1,45 @@
+body{
+    margin: 0;
+    padding: 20px;
+    font-family: sans-serif;
+   }
+   *{
+       box-sizing: border-box;
+   }  
+   
+   .table th{
+    background-color: darkblue;
+    color: #ffffff;
+   }
+  
+   
+   @media (max-width: 500px){
+         .container{
+           
+         }
+
+        .card{
+            width: 100%;
+            
+        }
+        th{
+            width: 100%;
+        }
+       
+       
+       
+       .table thead, .table th .table tbody, .table tr, .table td{
+           display: inline-flex;
+            width: 100%;
+           padding: 10px;
+           margin: 1px;
+           
+        }
+        
+
+    td .data-label a{
+        font-weight: 200;
+        
+    }
+       
+   }
