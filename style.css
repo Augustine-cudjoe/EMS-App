@@ -12,14 +12,24 @@ body{
     color: #ffffff;
    }
   
+   .container{
+    overflow: hidden;
+   }
    
    @media (max-width: 500px){
          .container{
+            padding: 0px;
+            margin: 0;
+            align-items: center;
+            justify-content: center;
+            
+            
            
          }
 
         .card{
             width: 100%;
+            overflow: hidden;
             
         }
         th{
@@ -33,6 +43,9 @@ body{
             width: 100%;
            padding: 10px;
            margin: 1px;
+           overflow-x: hidden;
+           text-overflow: ellipsis;
+           white-space: wrap;
            
         }
         
